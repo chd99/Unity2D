@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9b2288739ebf747861ac4129fd2820, type: 3}
+  m_Name: A9
+  m_EditorClassIdentifier: 
+  storyText: "\u5988\u5988\u5F00\u59CB\u505A\u9B3C\u8138\uFF0C\u770B\u80FD\u4E0D\u80FD\u9017\u4E50\u67D4\u67D4\r\n\r\n1.
+    \u597D\u5566\u597D\u5566\uFF0C\u4E0D\u54ED\u5566\uFF0C\u67D4\u67D4\u997F\u5566\r\n2.
+    \u7EE7\u7EED\u4F7F\u52B2\u513F\u5730\u54ED\uFF01"
+  nextStates:
+  - {fileID: 11400000, guid: ff6a89ab967cef44e964a64fda502895, type: 2}
+  - {fileID: 11400000, guid: 275e70e9eb6b8a14bb16dd02d15c00dc, type: 2}
