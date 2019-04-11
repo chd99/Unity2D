@@ -18,6 +18,7 @@ public class Ball : MonoBehaviour
     bool hasStarted = false;
 
     // cached component references
+    Level level;
     AudioSource myAudioSource;
     Rigidbody2D myRigbody2D;
 
@@ -27,6 +28,14 @@ public class Ball : MonoBehaviour
         paddleToBallVector = transform.position - paddle1.transform.position;
         myAudioSource = GetComponent<AudioSource>();
         myRigbody2D = GetComponent<Rigidbody2D>();
+
+        CountBalls();
+    }
+
+    private void CountBalls()
+    {
+        level = FindObjectOfType<Level>();
+        level.CountBalls();
     }
 
     // Update is called once per frame
@@ -47,7 +56,7 @@ public class Ball : MonoBehaviour
         {
             hasStarted = true;
             myRigbody2D.velocity = new Vector2(xPush, yPush);
-            Debug.Log("Paddle Unlocked");
+//            Debug.Log("Paddle Unlocked");
         }
     }
 
@@ -55,7 +64,7 @@ public class Ball : MonoBehaviour
     {
         Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
         transform.position = paddlePos + paddleToBallVector;
-        Debug.Log("Paddle Locked");
+//        Debug.Log("Paddle Locked");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -71,5 +80,10 @@ public class Ball : MonoBehaviour
             myRigbody2D.velocity += velocityTweak;
         }
 
+    }
+
+    public bool HasStarted()
+    {
+        return hasStarted;
     }
 }

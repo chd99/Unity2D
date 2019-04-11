@@ -47,6 +47,7 @@ MonoBehaviour:
   gameSpeed: 1
   pointPerBlock: 100
   scoreText: {fileID: 8306429324860615424}
+  isAutoPlayEnabled: 0
   currrentScore: 0
 --- !u!1001 &4920233818127957589
 PrefabInstance:
@@ -59,26 +60,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Game Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
-        type: 3}
-      propertyPath: m_text
-      value: 123456789
-      objectReference: {fileID: 0}
-    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
-        type: 3}
-      propertyPath: m_margin.z
-      value: 16.90297
-      objectReference: {fileID: 0}
-    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
-        type: 3}
-      propertyPath: m_textInfo.textComponent
-      value: 
-      objectReference: {fileID: 8306429324860615424}
-    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2171326842659854321, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
         type: 3}
@@ -184,6 +165,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
+        type: 3}
+      propertyPath: m_text
+      value: 123456789
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 16.90297
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
+        type: 3}
+      propertyPath: m_textInfo.textComponent
+      value: 
+      objectReference: {fileID: 8306429324860615424}
+    - target: {fileID: 3967235731450303829, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cf5b122e2d9a0a4993a33de6cfc6d3c, type: 3}

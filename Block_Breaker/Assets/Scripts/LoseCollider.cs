@@ -5,8 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
+
+    // cached component references
+    Level level;
+
+    private void CountActiveBalls()
+    {
+        level = FindObjectOfType<Level>();
+        level.BallLost();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Game Over");
+        Debug.Log("====================A Ball Lost =====================");
+        CountActiveBalls();
+//        SceneManager.LoadScene("Game Over");
     }
 }
