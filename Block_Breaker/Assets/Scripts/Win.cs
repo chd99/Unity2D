@@ -15,6 +15,7 @@ public class Win : MonoBehaviour
     {
         theGameSession = FindObjectOfType<GameSession>();
         scoreText.text = theGameSession.TotalScore().ToString();
+        DestroyImmediate(theGameSession);  //TODO: destory the DontDestroyOnLoad GameSession object
     }
 
     // Update is called once per frame

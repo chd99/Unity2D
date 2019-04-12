@@ -52,7 +52,7 @@ public class Ball : MonoBehaviour
 
     private void LauchOnMouseClick()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !hasStarted)
         {
             hasStarted = true;
             myRigbody2D.velocity = new Vector2(xPush, yPush);
