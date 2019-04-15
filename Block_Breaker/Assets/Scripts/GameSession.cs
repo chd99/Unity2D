@@ -32,7 +32,7 @@ public class GameSession : MonoBehaviour
 
     private void Start()
     {
-        scoreText.text = currrentScore.ToString();
+//        scoreText.text = currrentScore.ToString();
 
     }
 
@@ -46,7 +46,7 @@ public class GameSession : MonoBehaviour
     public void AddToScore()
     {
         currrentScore += pointPerBlock;
-        scoreText.text = currrentScore.ToString();
+//        scoreText.text = currrentScore.ToString();
     }
 
     public void RestGame()
@@ -59,8 +59,10 @@ public class GameSession : MonoBehaviour
         return isAutoPlayEnabled;
     }
 
-    public int TotalScore()
+    public int GetScore()
     {
+        Debug.Log("currentScore: " + currrentScore);
         return currrentScore;
+
     }
 }
